@@ -1,0 +1,42 @@
+@media screen and (max-width: 1990px) {
+    
+}
+@media screen and (max-width: 600px) {
+    .top-container .item {
+        width: 250px;
+        height: 120px;
+    }
+}
+.texts{
+    font-size: 25px;
+}
+.item{
+    display: block;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    margin: 0 10px;
+    border-radius: 5%;
+    background-color: gainsboro;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 400px;
+    height: 550px;
+
+}
+.xsxs{
+    cursor: pointer;
+}
+.imgg{
+    width: 400px;
+    height: 360px;
+}
+

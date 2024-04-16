@@ -1,0 +1,54 @@
+@media screen and (max-width: 1990px) {
+    .text{
+        font-size: 32px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .img{
+       display: none;
+       
+    }
+    .img-2{
+        margin-top: 5rem;
+    }
+    .text{
+        margin-top: 1rem;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .btn{
+        margin-top: 2rem;
+
+    }
+}
+
+.fs-5{
+    font-size: 30px;
+}
+.text-align-start{
+    text-align:right;
+    align-items: center;
+}
+
+
+.img-2{
+    z-index: 11;
+    position: relative;
+}
+.img{
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 900px;
+    z-index: 10;
+}
+

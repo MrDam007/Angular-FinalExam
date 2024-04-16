@@ -1,0 +1,166 @@
+@media screen and (max-width: 600px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .credit-card
+    {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .chipset{
+        margin-top: -15px;
+        margin-left: -20px;
+        width: 30px;
+        height: 20px;
+        margin-right: 0.5rem;
+    }
+    .purchased-product{
+        width: 400px;
+        height: 200px;
+        margin-top: 1rem;
+    
+    }
+    .img{
+        width: 3rem;
+    }
+    .info{
+        margin-left: 0.8rem;
+        
+    }
+}
+.img{
+    width: 8rem;
+
+}
+.text {
+    font-size: 22px;
+    position: relative;
+}
+
+.line {
+    /* position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; */
+    width: 250px;
+    height: 5px;
+    background-color: white;
+    margin: 0% auto;
+}
+
+.d-2 {
+    justify-content: space-between;
+}
+
+.pay {
+    color: white;
+}
+
+.d-3 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(to right, #f4791f, #659999);
+    background: linear-gradient(to right, #f4791f, #659999);
+    padding: 30px;
+    border-radius: 5%;
+    margin: 20px;
+}
+.cardd2{
+    color: pink;
+    transition: all .5;
+}
+.cardd:hover .cardd2{
+    color: pink;
+}
+.wallet2{
+    color: white;
+    transition: all .5;
+}
+.wallet:hover .wallet2{
+    color:pink;
+}
+
+.line2{
+    width: 90px;
+    height: 1px;
+    background-color: gray;
+    margin: 46px 20px;
+    transform: rotate(90deg);
+}
+
+.d-flex9{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    direction: rtl;
+}
+
+.color-box{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0% 10px;
+}
+
+input{
+    width: 55px;
+    height: 25px;
+    border-radius: 10%;
+    border: 1px solid pink;
+}
+.col1,.col2{
+    direction: rtl;
+}
+
+.d-flex-5{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.lo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input2{
+    padding: 5px;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.bg{
+    background-color: #f4791f;
+}

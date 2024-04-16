@@ -1,0 +1,59 @@
+@media screen and (max-width: 1990px) {
+    .text {
+      font-size: 50px ; 
+   }
+  }
+@media screen and (max-width: 600px) {
+    .text-2 {
+      display: none;
+    }
+    .text{
+        font-size: 35px;
+    }
+    .top-container{
+        background-color:whitesmoke;
+        border-radius: 2rem;
+        margin: 0 20px;
+    }
+    .year-text{
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .bt{
+        margin-bottom:-5rem ;
+        width: 8rem;
+    }
+    
+    .recent{
+        display: none;
+    }
+  }
+.card-2{
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 22px;
+    direction: rtl;
+    position: relative;
+    bottom: 50px;
+}
+/* .text{
+    font-size:50px;
+    text-align: center;
+    margin-bottom: 2rem;
+} */
+.year-text{
+}
+.text-2{
+    direction: rtl;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bt{
+    /* margin: 0 auto; */
+}

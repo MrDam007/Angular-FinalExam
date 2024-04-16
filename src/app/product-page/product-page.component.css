@@ -1,0 +1,79 @@
+.product {
+  height: 95vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-image: url(../../assets/img/44-440309_nike-shoes-png-transparent-background-nike-shoes-png-removebg-preview\ 3.png); */
+  /* background: url(../../assets/img/44-440309_nike-shoes-png-transparent-background-nike-shoes-png-removebg-preview\ 3.png) no-repeat center center / cover; */
+
+}
+.Pink {
+  color: #cb26ad;
+}
+.bg-blue {
+  background-color: #1684c2;
+}
+.bg-pink {
+  background-color: #ff00b8;
+}
+.bg-yellow {
+  background-color: #e8ec2f;
+}
+.second-blue {
+  background-color: #1684c2;
+}
+.color {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.color:hover {
+  cursor: pointer;
+}
+
+.size {
+  border-radius: 12px;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #000;
+}
+.size:hover {
+  cursor: pointer;
+}
+.bg-btn {
+  background-color: #3ba3df;
+  width: 10.5rem;
+  height: 2.2rem;
+  border: none;
+}
+.bg-btn:hover{
+    cursor: pointer;
+}
+.product-iamge {
+  width: 100%;
+  height:  550px;
+  /* margin-left: -150px; */
+}
+.resize-img {
+  /* overflow: hidden; */
+  /* width: 500px; */
+    object-fit: contain;
+}
+.circle-st{
+    width: 9rem;
+    height: 17.5rem;
+}
+
+
+.start-part{
+    margin-top: -2.5rem;
+    position: absolute;
+    right: 11rem;
+}
+
+.frame{
+    z-index: -1;
+    opacity: .45     ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}

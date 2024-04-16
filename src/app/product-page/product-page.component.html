@@ -1,0 +1,75 @@
+<div class="product position-relative">
+    <img class="position-absolute frame" src="../../assets/img/Frame.png" alt="">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-3 d-flex  justify-content-end align-items-center">
+                <div class="datalis  d-flex flex-column flex-wrap ">
+                    <div class="product-name ms-auto">
+                        <h2 class="Pink fw-bold fs-4">
+                            {{Name}}
+                        </h2>
+                        <p class="text-end fs-5">{{gender | genderpipe}}</p>
+                    </div>
+
+                    <div class="product-price  ms-auto ">
+                        <h2 class="fw-bold fs-2  text-end ">${{price}}</h2>
+                    </div>
+                    <div class="product-color ms-auto my-2">
+                        <h2 class="fs-4 my-1 text-end ">رنگ </h2>
+                        <div class="d-flex mt-1">
+                            <div class="color mx-1 rounded-circle bg-blue"></div>
+                            <div class="color mx-1 rounded-circle bg-pink"></div>
+                            <div class="color mx-1 rounded-circle bg-yellow"></div>
+                        </div>
+                    </div>
+                    <div class="product-size ms-auto mb-4">
+                        <h2 class="fs-4 my-1 text-end  ">سایز </h2>
+                        <div class="d-flex">
+                            <div class="size mx-1  d-flex justify-content-center align-items-center ">
+                                42
+                            </div>
+                            <div class="size mx-1  d-flex justify-content-center align-items-center ">
+                                41
+                            </div>
+                            <div class="size mx-1  d-flex justify-content-center align-items-center ">
+                                40
+                            </div>
+                            <div class="size mx-1  d-flex justify-content-center align-items-center ">
+                                39
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-cart text-white ms-auto bg-btn rounded-1 fw-bold" (click)="addToCart()">
+                        افزودن به سبد خرید
+                    </button> <!--New-->
+                </div>
+            </div>
+            <div class="col-lg-9 ">
+                <div class="product-pic d-flex flex-wrap">
+                    <div class="w-75  d-flex me-auto">
+                        <div class="resize-img text-start me-auto">
+                            <img src={{img}} alt="" class=" product-iamge">
+
+                        </div>
+                    </div>
+                    <div class="w-25 d-flex align-items-center">
+                        <div class="position-absolute end-0">
+                            <img src="../../assets/img/Group 109 (1).png" class="img-fluid circle-st" alt="">
+                        </div>
+                        <div class="start-part   ">
+                            <div class="">
+                                <img src="../../assets/img/Group 104.png" alt="">
+                            </div>
+                            <div class="">
+                                <img src="../../assets/img/Group 103.png" alt="">
+                            </div>
+                            <div class="">
+                                <img src="../../assets/img/Group 102.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

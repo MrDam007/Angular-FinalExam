@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+    .img-container{
+        display: none;
+    }
+    .img-holder{
+       border: 0.1rem solid whitesmoke;
+       margin-left: -38px;
+    }
+}
+.d-flex{
+    gap: 5px;
+}

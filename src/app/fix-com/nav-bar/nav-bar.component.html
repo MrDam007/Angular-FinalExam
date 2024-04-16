@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <div>
+      <a mat-icon-button routerLink="main" ><mat-icon class="text-dark">
+          house
+        </mat-icon>
+      </a>
+
+      <a mat-icon-button routerLink="/wallet" *ngIf="ali()">
+        <mat-icon class=" text-dark" title="سبد خرید">
+          local_mall
+        </mat-icon>
+      </a>
+
+      <a mat-icon-button routerLink="/product-pages" *ngIf="ali()">
+        <mat-icon class="text-dark">
+          search
+          <span *ngIf="badgeResult()"
+            class="position-absolute badgestyle start-100 translate-middle p-2 bg-danger border border-light rounded-circle"> <!--New-->
+          </span>
+        </mat-icon>
+      </a>
+
+
+      <a mat-icon-button routerLink="/signup" *ngIf="!ali()" (click)="onClose()" title="ثبت نام">
+        <mat-icon>person_add</mat-icon></a>
+      <a mat-icon-button routerLink="/login" *ngIf="!ali()" (click)="onClose()"
+        title="ورود"><mat-icon>login</mat-icon></a>
+
+
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div>
+      </div>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/main">وبلاگ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product-pages">کودک</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/product-pages">آقایان </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product-pages">بانوان</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+    <a class="navbar-brand" href="#">
+      <a mat-icon-button *ngIf="ali()" (click)="Logout()" title="خروج"><mat-icon>logout</mat-icon></a>
+      <mat-icon>nike</mat-icon>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>

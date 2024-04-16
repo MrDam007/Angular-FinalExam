@@ -1,0 +1,29 @@
+@media screen and (max-width: 1990px) {
+    
+}
+@media screen and (max-width: 600px) {
+    .top-container .item {
+        width: 250px;
+        height: 120px;
+    }
+}
+
+.item{
+    display: inline-block;
+    width: 312px;
+    height: 150px;
+    background-color: rgb(151, 2, 2);
+    position: relative;
+    margin: 0 12px;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+
+}

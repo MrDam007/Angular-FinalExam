@@ -1,0 +1,44 @@
+@media screen and (max-width: 1990px) {
+    
+}
+@media screen and (max-width: 600px) {
+    .top-container .item {
+        width: 250px;
+        height: 120px;
+    }
+    .weblog{
+        display: none;
+    }
+    .img-holder{
+        display: none;
+    }
+    .info-card{
+        margin-left: -150px;
+        margin-top: 5rem;
+    }
+}
+.text{
+    text-decoration: none;
+}
+
+.inforamtion{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.d-flex{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inforamtion{
+    font-weight: 800;
+}
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

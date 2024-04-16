@@ -1,0 +1,114 @@
+<div class="bg-info">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-5">
+                <div class="card bg-dark p-5 credit-card">
+                    <div>
+                        <p class="text-white fw-bold text-center text ">
+                            اطلاعات پرداخت
+                        </p>
+                        <div class="line "></div>
+                        <p class="text-white fw-bold text-center">
+                            روش پرداخت
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="d-flex d-3">
+                        <div class="wallet wal">
+                            <i class="fa-solid fa-wallet fa-2xl pay wallet2"></i>
+                            <span class="wallet2">کیف پول اعباری</span>
+                        </div>
+                        <div class="cardd wal">
+                            <i class="fa-regular  fa-credit-card fa-2xl pay cardd2"></i>
+                            <span class=" cardd2">کارت اعتباری</span>
+                        </div>
+                    </div>
+                    <div class="pic cart rounded">
+                        <img src="../../assets/img/Subtract.png" alt="" class="chipset">
+                        <br><br>
+                        <p>5263 &nbsp; <span>4060</span> &nbsp; <span>8596</span> &nbsp; <span>8069</span></p>
+                    </div>
+                    <div class="city" dir="rtl">
+                        <p class="text-white">جمع سفارشات: {{price}} $</p>
+                        <select name="" id="" class="input" required>
+                            <option value="" defaultSelected>انتخاب شهر مورد نظر</option>
+                            <option value="مشهد">مشهد</option>
+                            <option value="تهران">تهران</option>
+                            <option value="اصفهان">اصفهان</option>
+                            <option value="خرم شهر">خرم شهر</option>
+                            <option value="شیراز">شیراز</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="d-flex d-2">
+                        <span class="text-white">نیاز به کمک دارید؟</span>
+                        <span class="text-white">تمام پرداخت ها تضمین شده است</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-1"></div>
+            <div class="col-6">
+                <div class="row mb-3" dir="rtl">
+                    <div class="card bg col-7">
+                        <h3 class="fw-bold text-white"> کاربر :</h3>
+                        <div dir="ltr">
+                            <p class="text-white">user: {{user}}</p>
+                            <p class="text-white">password: {{password}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="card bg-white p-3 purchased-product ">
+                        <div class="box">
+                            <div class="d-flex-9 p-3" *ngFor="let item of cartItems">
+                                <div class="d-flex9 info">
+                                    <p class="text-align-right fw-bold">
+                                        {{item?.Name}}
+                                    </p>
+                                    <div class="d-flex-5">
+                                        <div class="col1">
+                                            <p><span>سایز:</span>
+                                                <input type="number" [value]="38" readonly>
+                                            </p>
+                                            <span>رنگ :</span>
+                                            <span class="lo">{{item.color}}<div class="color-box bg-primary"></div>
+                                                </span>
+
+                                        </div>
+                                        <div class="col2">
+
+                                            <p><span>تعداد:</span>
+                                                <input type="number" [value]="item.count" readonly>
+                                            </p>
+
+
+                                            <span class="fw-bold">{{item.price}}</span>
+                                            <span>قیمت :</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="line2"></div>
+                                <img [src]="item.img" alt="NF" class="img" >
+                                <button class="delete" (click)="deleteCart(item.id)">حذف</button>
+                                <button class="plus" (click)="add(item.id)">+</button>
+                                <button class="mines" (click)="sub(item.id)">-</button>
+                            </div>
+                        </div>
+                    </div> <!--New-->
+
+
+
+
+                </div>
+
+                <h3>مبلغ کل : {{ totalprice }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
